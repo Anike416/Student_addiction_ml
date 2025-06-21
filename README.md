@@ -22,7 +22,7 @@ Link to Streamlit-WebPage : http://192.168.1.4:8501
 🎯 Easy to extend with new features or deploy online
 
 
-##🖥️ Tech Stack
+## 🖥️ Tech Stack
 Layer	Tools Used
 💡 Model	Scikit-learn (Random Forest Regressor)
 🔄 Preprocess	OneHotEncoding, StandardScaler, Pipeline
