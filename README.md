@@ -1,8 +1,8 @@
-📱 Social Media Addiction Score Predictor
+# 📱 Social Media Addiction Score Predictor
 This is a web application that predicts a student's social media addiction score (1–10) based on their behavioral, lifestyle, and psychological factors.
 It also provides a concern level assessment to guide users about their digital wellbeing.
 
-Link to WebPage designed by me :
+Link to WebPage designed by me : http://127.0.0.1:5000
 
 Link to Streamlit-WebPage : http://192.168.1.4:8501
 
