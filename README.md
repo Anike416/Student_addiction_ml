@@ -25,9 +25,13 @@ Link to Streamlit-WebPage : http://192.168.1.4:8501
 ## 🖥️ Tech Stack
 Layer	Tools Used
 💡 Model	Scikit-learn (Random Forest Regressor)
+
 🔄 Preprocess	OneHotEncoding, StandardScaler, Pipeline
+
 🌐 Frontend	HTML5, CSS3
+
 🧠 Backend	Flask (Python)
+
 📦 Deployment	(Localhost / ready for Render/Heroku)
 
 
