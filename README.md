@@ -2,9 +2,10 @@
 This is a web application that predicts a student's social media addiction score (1–10) based on their behavioral, lifestyle, and psychological factors.
 It also provides a concern level assessment to guide users about their digital wellbeing.
 
-Link to WebPage designed by me : http://127.0.0.1:5000
-
-Link to Streamlit-WebPage : http://192.168.1.4:8501
+| Version        | Status     |                           Link                             |
+|----------------|------------|------------------------------------------------------------|
+| Streamlit App  | ✅ Local   | Run with streamlit Streamlit.py     http://192.168.1.4:8502
+| Flask App      | ✅ Local   | Run with python app.py               http://127.0.0.1:5000
 
 ## 🌟 Key Features
 🔢 Predicts a numerical addiction score (1 to 10)
