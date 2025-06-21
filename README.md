@@ -6,7 +6,7 @@ Link to WebPage designed by me : http://127.0.0.1:5000
 
 Link to Streamlit-WebPage : http://192.168.1.4:8501
 
-🌟 Key Features
+## 🌟 Key Features
 🔢 Predicts a numerical addiction score (1 to 10)
 
 🧠 Provides a concern level (Low, Moderate, High, Critical)
@@ -22,7 +22,7 @@ Link to Streamlit-WebPage : http://192.168.1.4:8501
 🎯 Easy to extend with new features or deploy online
 
 
-🖥️ Tech Stack
+##🖥️ Tech Stack
 Layer	Tools Used
 💡 Model	Scikit-learn (Random Forest Regressor)
 🔄 Preprocess	OneHotEncoding, StandardScaler, Pipeline
@@ -31,7 +31,7 @@ Layer	Tools Used
 📦 Deployment	(Localhost / ready for Render/Heroku)
 
 
-📊 Dataset Overview
+## 📊 Dataset Overview
 Source: Simulated / collected student social media usage data
 
 Size: 705 entries × 13 features
@@ -44,7 +44,7 @@ Platform, Country, Relationship Status, etc.
 
 
 
-🧠 ML Pipeline Highlights 
+## 🧠 ML Pipeline Highlights 
 
 📌 Target: Addicted_Score (range 1–10)
 
