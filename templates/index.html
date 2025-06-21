@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>📱 Addiction Score Predictor</title>
+  <style>
+    /* Background styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg,rgb(35, 79, 167),rgb(233, 242, 249));
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-box {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(62, 108, 84, 0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #2c3e50;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      color: #333;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .result {
+      margin-top: 25px;
+      padding: 15px;
+      border-radius: 10px;
+      background: #f0f8ff;
+      border-left: 5px solid #007bff;
+    }
+
+    .result strong {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>📱 Social Media Addiction Score Predictor</h2>
+        <form action="/predict" method="post">
+            <label>Age:</label>
+            <input type="number" name="age" required>
+
+            <label>Gender:</label>
+            <select name="gender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <label>Academic Level:</label>
+            <select name="academic_level">
+                <option>High School</option>
+                <option>Undergraduate</option>
+                <option>Graduate</option>
+            </select>
+
+            <label>Country:</label>
+            <input type="text" name="country" value="India">
+
+            <label>Avg Daily Usage (hrs):</label>
+            <input type="number" step="0.1" name="usage" required>
+
+            <label>Most Used Platform:</label>
+            <select name="platform">
+                <option>Instagram</option>
+                <option>YouTube</option>
+                <option>WhatsApp</option>
+                <option>Facebook</option>
+                <option>Twitter</option>
+                <option>Others</option>
+            </select>
+
+            <label>Does it affect academics?</label>
+            <select name="affects">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+
+            <label>Sleep Hours per Night:</label>
+            <input type="number" step="0.1" name="sleep" required>
+
+            <label>Mental Health Score (1–10):</label>
+            <input type="number" name="mental" min="1" max="10" required>
+
+            <label>Relationship Status:</label>
+            <select name="relationship">
+                <option>Single</option>
+                <option>In a Relationship</option>
+                <option>Complicated</option>
+                <option>Prefer not to say</option>
+            </select>
+
+            <label>Conflicts Over Social Media (0–10):</label>
+            <input type="number" name="conflicts" min="0" max="10" required>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+            <div class="result">
+                <p><strong>Predicted Score:</strong> {{ prediction }} / 10</p>
+                <p><strong>Concern Level:</strong> {{ concern }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
