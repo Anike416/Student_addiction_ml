@@ -4,8 +4,8 @@ It also provides a concern level assessment to guide users about their digital w
 
 | Version        | Status     |                           Link                             |
 |----------------|------------|------------------------------------------------------------|
-| Streamlit App  | ✅ Local   | Run with Streamlit.py            http://192.168.1.4:8502
-| Flask App      | ✅ Local   | Run with app.py            http://127.0.0.1:5000
+| Streamlit App  | ✅ Local   | Run with             streamlit run Streamlit.py
+| Flask App      | ✅ Local   | Run with             python app.py
 
 ## 🌟 Key Features
 🔢 Predicts a numerical addiction score (1 to 10)
