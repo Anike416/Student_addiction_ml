@@ -17,7 +17,7 @@ from xgboost import XGBRegressor
 from sklearn.metrics import r2_score
 from src.exception import CustomException
 from src.logger import logging
-from src.utils import save_object,evaluate_model
+from src.utils import save_object
 
 @dataclass
 class ModelTrainingConfig:
@@ -113,8 +113,8 @@ class ModelTrainer:
                     }
                     
             best_model_name = max(best_models, key=lambda x: best_models[x]['best_score'])
+          
             best_model = best_models[best_model_name]['best_estimator']
-            
             
             
             logging.info("Best found model on both trainig and testing dataset")
